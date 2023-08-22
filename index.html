@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sweetalert2.min.css" />
+    <title>modal project</title>
+  </head>
+  <body>
+    <div class="backdrop"></div>
+    <button class="btn show-modal">ثبت نام</button>
+    <div class="modal">
+      <h1 class="title-modal">اطلاعات خود را وارد کنید</h1>
+      <div class="input-user">
+        <form action="#" id="form-model">
+          <label for="name">نام</label>
+          <input type="text" class="name" name="fname" placeholder="علی"/>
+          <label for="text">نام خانوادگی</label>
+          <input type="text" class="lastname" name="lname" placeholder="احمدی" />
+          <label for="phone">شماره تلفن</label>
+          <input
+            type="tel"
+            class="phone"
+            name="phone"
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            placeholder="0999999999"
+          />
+        </form>
+      </div>
+      <div class="btns">
+        <button class="btn close-modal">انصراف</button>
+        <button class="btn confirm-modal">تایید</button>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
